@@ -1,0 +1,354 @@
+@media only screen and (max-width:1440px){
+	.vector1, .vector2 {
+    	max-width: 400px;
+	}
+	.cart-detailBox {
+    	flex-direction: column;
+	}
+	.cartDetail-left {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.detailCart-productInfo {
+		max-width: 100%;
+	}
+	.cartDetail-right {
+    	flex-direction: row;
+    	max-width: 100%;
+    	min-height: auto;
+	}
+}
+@media only screen and (max-width:1366px){
+	.homeScreen-wrap .rightCol {
+    	width: calc(100% - 280px);
+	}
+	/** MESSAGES SCREEN RESPONSIVE START **/
+	.main-message-wrap {
+        max-width: 750px;
+    }
+    /** MESSAGES SCREEN RESPONSIVE END **/
+    .productCart-title {
+    	font-size: 18px;
+	}
+	.cartDetail-left .paragraph {
+    	font-size: 14px;
+	}
+}
+@media only screen and (max-width:1280px){
+	.infoBox:before {
+		left: -4%;
+	}
+}
+@media only screen and (max-width:1200px){
+	.logo img {
+    	max-width: 350px;
+	}
+	.vector1, .vector2 {
+    	max-width: 300px;
+	}
+	.formScreen-wrap {
+    	max-width: 420px;
+	}
+	.purple-heading {
+    	font-size: 30px !important;
+	}
+	.fieldBox {
+		padding: 15px;
+	}
+	/*** REGISTRATION SCREEN RESPONSIVE CSS START ***/
+	.RadioButtons-inner-sect, .customRadio {
+        max-width: 100px;
+        min-height: 100px;
+    }
+    .RadioButtons-inner-sect {
+        margin-bottom: 10px;
+    }
+    .customRadio-content img {
+        max-width: 30px;
+    }
+    .RadioButtons-sect {
+        width: 170%;
+        margin: 0 0 0 -35%;
+    }
+    .Parent-fieldBox .fieldBox {
+        max-width: 200px;
+    }
+    /*** REGISTRATION SCREEN RESPONSIVE CSS END ***/
+    .homeInner-links {
+    	justify-content: center;
+	}
+    .homeInner-link p {
+    	font-size: 22px;
+	}
+	/** MESSAGES SCREEN RESPONSIVE START **/
+	.main-message-wrap {
+        max-width: 650px;
+    }
+    /** MESSAGES SCREEN RESPONSIVE END **/
+    .measureScreen-innerWrap {
+    	flex-direction: column;
+    	align-items: flex-start;
+	}
+	.measureScreen-innerWrap form {
+    	max-width: 100%;
+    	margin-bottom: 30px;
+	}
+	.measure-rightCol {
+    	width: calc(100% - 0px);
+    	margin-bottom: 15px;
+	}
+}
+@media only screen and (max-width:1024px){
+	.logo img {
+    	max-width: 300px;
+	}
+	.formScreen-wrap .logo img {
+    	max-width: 280px;
+	}
+	.homeInner-link img {
+    	max-width: 60px;
+	}
+}
+@media only screen and (max-width:991px){
+	.vector1, .vector2 {
+	    max-width: 280px;
+	}
+	aside {
+    	left: -100%;
+	}
+	aside.show {
+		left: 0;
+		transition: all 0.8s ease-in-out;
+	}
+	.toggle-btn {
+		display: block;
+	}
+	.toggleClose-btn {
+		display: flex;
+	}
+	.homeScreen-wrap .rightCol {
+    	width: calc(100% - 0px);
+    	margin: 0;
+	}
+	/** MESSAGES SCREEN RESPONSIVE START **/
+	.messageinner-wrap {
+        padding: 0 20px;
+    }
+    .main-message-wrap {
+        max-width: 100%;
+    }
+    /** MESSAGES SCREEN RESPONSIVE END **/
+    .measureScreen-wrap {
+    	max-width: 700px;
+    	margin: 0 auto;
+	}
+}
+@media only screen and (max-width:910px){
+	.vector1, .vector2 {
+    	max-width: 250px;
+	}
+	.purple-heading {
+    	font-size: 26px !important;
+	}
+	/*** REGISTRATION SCREEN RESPONSIVE CSS START ***/
+	.RadioButtons-sect {
+    	width: 160% !important;
+    	margin: 0 0 0 -30% !important;
+	}
+	/*** REGISTRATION SCREEN RESPONSIVE CSS END ***/
+	.verification-poup .modal-dialog {
+    	max-width: 500px;
+	}
+	.loggedIn .detail p {
+    	font-size: 18px;
+	}
+}
+@media only screen and (max-width:767px){
+	.logo img {
+    	max-width: 250px;
+	}
+	.vector1, .vector2 {
+    	max-width: 200px;
+	}
+	.formScreen-wrap .logo img {
+    	max-width: 250px;
+	}
+	.purple-heading {
+    	font-size: 22px !important;
+	}
+	.fieldBox {
+    	padding: 10px 15px;
+    	border-radius: 5px;
+	}
+	.fieldBox span {
+    	font-size: 16px;
+	}
+	.fieldBox input {
+    	font-size: 16px;
+	}
+	/*** REGISTRATION SCREEN RESPONSIVE CSS START ***/
+	.RadioButtons-sect {
+	    width: 100% !important;
+	    max-width: 350px;
+	    margin: 0 auto !important;
+	}
+	.RadioButtons-inner-sect {
+	    margin-bottom: 10px;
+	    display: flex;
+	    flex-direction: column;
+	    align-items: center;
+	    justify-content: center;
+	}
+	.customRadio {
+    	max-width: 80px;
+    	min-height: 80px;
+    	display: flex;
+    	flex-direction: column;
+    	align-items: center;
+	}
+	.formScreen-wrap p {
+    	font-size: 14px;
+	}
+	/*** REGISTRATION SCREEN RESPONSIVE CSS END ***/
+
+	/** MESSAGES SCREEN RESPONSIVE START **/
+	.child-st-name {
+        font-size: 16px;
+    }    
+    .child-st-para {
+        font-size: 14px;
+    }
+    /** MESSAGES SCREEN RESPONSIVE END **/
+}
+@media only screen and (max-width:575px){
+	.vector1, .vector2 {
+    	max-width: 150px;
+	}
+	.formScreen-wrap {
+    	max-width: 320px;
+	}
+	.formScreen-wrap .logo img {
+    	max-width: 200px;
+	}
+	.purple-heading {
+    	font-size: 20px !important;
+	}
+	/*** REGISTRATION SCREEN RESPONSIVE CSS START ***/
+	.customRadio {
+        max-width: 75px;
+        min-height: 75px;
+        margin: 0px 0px 10px 10px;
+    }
+    .Parent-fieldBox {
+        flex-direction: column;
+        width: 100%;
+    }
+    .Parent-fieldBox .fieldBox {
+        max-width: 100%;
+        width: 100%;
+    }
+    .RadioButtons-sect .customRadio input[type="radio"]:checked + .customRadio-content:after {
+        height: 20px;
+        width: 20px;
+    }
+    /*** REGISTRATION SCREEN RESPONSIVE CSS END ***/
+
+    /** MESSAGES SCREEN RESPONSIVE START **/
+	.messagesect-wrap {
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding: 10px 15px;
+    }
+    .inner-message-section1 {
+        align-items: flex-start;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    .messager-img {
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    .inner-child-sect {
+        padding: 0px 0px;
+        width: 100%;
+    }    
+    .inner-message-section2 {
+        width: 100%;
+        margin-left: auto;
+    }
+    /** MESSAGES SCREEN RESPONSIVE END **/
+
+    /** HOME SCREEN RESPONSIVE START **/
+    .homeInner-link {
+	    max-width: 150px;
+	    max-height: 150px;
+	    min-height: 150px;
+	}
+	.homeInner-link img {
+    	max-width: 50px;
+	}
+	.homeInner-link p {
+    	font-size: 18px;
+	}
+	/** HOME SCREEN RESPONSIVE END **/
+	.avatar-upload {
+	    min-height: 240px;
+    	max-height: 240px;
+	}
+	.avatar-upload .avatar-edit {
+    	right: unset;
+    	left: 0;
+	}
+}
+@media only screen and (max-width:385px){
+	.logo img {
+    	max-width: 200px;
+	}
+	.vector1, .vector2 {
+    	max-width: 120px;
+	}
+	.formScreen-wrap {
+    	max-width: 280px;
+	}
+	.formScreen-wrap .logo img {
+    	max-width: 160px;
+	}
+	.purple-heading {
+    	font-size: 18px !important;
+	}
+	/*** REGISTRATION SCREEN RESPONSIVE CSS START ***/
+	.RadioButtons-sect {
+    	max-width: 220px;
+	}
+	/*** REGISTRATION SCREEN RESPONSIVE CSS END ***/
+	.loggedIn {
+    	max-width: 170px;
+	}
+	.loggedIn .image img {
+	    max-width: 60px;
+	    max-height: 60px;
+	    min-height: 60px;
+	}
+	.loggedIn .detail p {
+    	font-size: 16px;
+	}
+	/** MESSAGES SCREEN RESPONSIVE START **/
+	.messager-img img {
+        max-width: 60px;
+    }
+	/** MESSAGES SCREEN RESPONSIVE END **/
+	.measurementBox .measue-field {
+    	max-width: 100%;
+	}
+	.measurementBox span {
+	    display: block;
+	    text-align: center;
+	    width: 100%;
+	    margin: 10px 0 15px;
+	}
+	.total-field {
+    	max-width: 100%;
+	}
+}

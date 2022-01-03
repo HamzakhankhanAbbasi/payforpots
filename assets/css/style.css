@@ -1,0 +1,827 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap');
+h1, h2, h3, h4, h5, h6, p, span, ul, li, a, .btn-default, textarea {
+	margin: 0;
+	padding: 0;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+a,a:hover {
+	text-decoration: none;
+}
+a:focus {
+	text-decoration: none;
+}
+body {
+  overflow-x: hidden;
+  font-family: 'Open Sans';
+  scroll-behavior: smooth;
+}
+.container{
+	max-width: 1200px;
+}
+/** SPLASH SCREEN ONE CSS START
+*************************************/
+.splashScreen-sec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  position: relative;
+}
+.logo {
+  position: relative;
+}
+.logo img {
+  max-width: 400px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.vector1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  object-fit: cover;
+  object-position: center;
+  max-width: 450px;
+  width: 100%;
+  z-index: -1;
+}
+.vector2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  object-fit: cover;
+  object-position: center;
+  max-width: 450px;
+  width: 100%;
+  z-index: -1;
+}
+/** SPLASH SCREEN ONE CSS END
+*************************************/
+
+/** LOGIN SCREEN CSS START
+*************************************/
+.formScreen-wrap {
+  max-width: 550px;
+  width: 100%;
+  position: relative;
+}
+.formScreen-wrap .logo img {
+  max-width: 350px;
+}
+.screen-heading {
+  margin: 30px 0;
+}
+.purple-heading {
+  font-size: 36px !important;
+  font-weight: 700 !important;
+  color: #ab267c !important;
+  text-transform: capitalize !important;
+}
+.fieldBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0 5px 1px #ccc;
+  padding: 20px;
+  border-radius: 10px;
+}
+.fieldBox span {
+  color: #b2b2b2;
+  font-size: 20px;
+  margin-right: 10px;
+}
+.fieldBox input {
+  font-size: 18px;
+  font-weight: 600;
+  color: #282828;
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 0 10px;
+}
+.boxshadow {
+  box-shadow: 0 0 5px 1px #fb7a00;
+}
+.active {
+  box-shadow: 0 0 5px 1px #fb7a00;
+}
+.forgetPassword {
+  text-align: right;
+  padding: 15px 0;
+}
+.black-anchor {
+  font-size: 16px;
+  font-weight: 600;
+  color: #282828;
+  transition: all 0.3s ease-in-out;
+}
+.black-anchor:hover {
+  color: #aa237f;
+}
+.cta-btn {
+  background: linear-gradient(180deg, rgba(186,34,124,1) 22%, rgba(127,38,134,1) 68%);
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  border: none;
+  outline: none;
+  display: inline-block;
+  padding: 15px 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+.cta-btn:hover {
+  color: #fff;
+  background: linear-gradient(180deg, rgba(230,174,0,1) 22%, rgba(247,129,0,1) 68%);
+}
+.formScreen-wrap p {
+  font-size: 16px;
+  font-weight: 600;
+  color: #282828;
+}
+.orange-anchor {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fb7a00;
+  transition: all 0.3s ease-in-out;
+}
+.orange-anchor:hover {
+  color: #aa237f;
+}
+/** LOGIN SCREEN CSS END
+*************************************/
+
+/** FORGET PASSWORD POPUP CSS START
+*************************************/
+.forgetpasswordModal-popup .btn-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  box-shadow: 0px 0px 10px 1px #ab267c;
+  border-radius: 10px;
+  transform: rotate(90deg);
+  transition: all 0.3s ease-in-out;
+}
+.forgetpasswordModal-popup .btn-close:hover {
+  transform: rotate(-90deg);
+}
+/** FORGET PASSWORD POPUP CSS END
+*************************************/
+
+/** REGISTRATION SCREEN CSS START
+************************************/
+.regisSec-wrap {
+  margin: 70px 0;
+}
+.Parent-fieldBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Parent-fieldBox .fieldBox {
+  max-width: 260px;
+}
+.RadioButtons-inner-sect {
+  width: 100%;
+  max-width: 100px;
+  min-height: 100px;
+  text-align: center;
+}
+.customRadio {
+  background: #ffdff0;
+  width: 100%;
+  max-width: 100px;
+  min-height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.RadioButtons-sect {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 125%;
+  margin: 0 0 0 -13%;
+}
+.customRadio input {
+  position: absolute;
+  right: 0;
+  top: 0;
+  opacity: 0;
+}
+.RadioButtons-sect .customRadio input[type="radio"]:checked + .customRadio-content:after {
+  content: "";
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  background: url(../images/check.png);
+  right: 0px;
+  top: 0px;
+  background-size: cover;
+}
+.customRadio-content img {
+  width: 100%;
+  max-width: 40px;
+  object-fit: cover;
+  object-position: center;
+}
+/** REGISTRATION SCREEN CSS END
+************************************/
+
+/** VERIFICATION MODAL CSS START
+*************************************/
+.verification-poup .modal-dialog {
+  max-width: 650px;
+}
+.verification-poup .modal-content {
+  min-height: 380px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.verification-poup .modal-body {
+  text-align: center;
+  padding: 0;
+}
+.checkmark-circle {
+  width: 125px;
+  height: 125px;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  background: #32ba7c;
+  border-radius: 50%;
+  margin: 25px 0 35px;
+}
+.checkmark-circle .checkmark.draw:after {
+  -webkit-animation-delay: 100ms;
+  -moz-animation-delay: 100ms;
+  animation-delay: 100ms;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease;
+  -moz-animation-timing-function: ease;
+  animation-timing-function: ease;
+  -webkit-animation-name: checkmark;
+  -moz-animation-name: checkmark;
+  animation-name: checkmark;
+  -webkit-transform: scaleX(-1) rotate(135deg);
+  -moz-transform: scaleX(-1) rotate(135deg);
+  -ms-transform: scaleX(-1) rotate(135deg);
+  -o-transform: scaleX(-1) rotate(135deg);
+  transform: scaleX(-1) rotate(135deg);
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.checkmark-circle .checkmark:after {
+  opacity: 1;
+  height: 75px;
+  width: 37.5px;
+  -webkit-transform-origin: left top;
+  -moz-transform-origin: left top;
+  -ms-transform-origin: left top;
+  -o-transform-origin: left top;
+  transform-origin: left top;
+  border-right: 15px solid white;
+  border-top: 15px solid white;
+  border-radius: 2.5px !important;
+  content: "";
+  left: 25px;
+  top: 70px;
+  position: absolute;
+}
+@keyframes checkmark {
+  0% {
+    height: 0;
+    width: 0;
+    opacity: 1;
+  }
+  20% {
+    height: 0;
+    width: 37.5px;
+    opacity: 1;
+  }
+  40% {
+    height: 75px;
+    width: 37.5px;
+    opacity: 1;
+  }
+  100% {
+    height: 75px;
+    width: 37.5px;
+    opacity: 1;
+  }
+}
+.verification-button {
+  max-width: 320px;
+  width: 100%;
+  margin: 0 auto;
+}
+/** VERIFICATION MODAL CSS END
+*************************************/
+
+/** HOME SCREEN CSS START
+*************************************/
+.homeScreen-wrap {
+  position: relative;
+  padding: 150px 0 50px;
+  min-height: 100vh;
+}
+aside {
+  max-width: 240px;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(186,34,124,1) 22%, rgba(127,38,134,1) 68%);
+  padding: 30px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 9999;
+  transition: all 0.8s ease-in-out;
+}
+.toggle-btn {
+  background: linear-gradient(180deg, rgba(186,34,124,1) 22%, rgba(127,38,134,1) 68%);
+  color: #fff;
+  font-size: 26px;
+  border: none;
+  outline: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  display: none;
+}
+.toggleClose-btn {
+  color: #ac267c;
+  background: #fff;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  font-size: 26px;
+  padding: 10px 15px;
+  display: none;
+  align-items: center;
+  margin: -20px -20px 20px auto;
+  box-shadow: 0 0 10px 0 #ac267c;
+}
+.home-logo img {
+  max-width: 170px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.screenLinks {
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.screenLinks ul {
+  list-style-type: none;
+  width: 100%;
+  padding-right: 20px;
+}
+.screenLinks ul li a {
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  display: block;
+  transition: all 0.3s ease-in-out;
+  padding: 15px 30px;
+  margin-bottom: 15px;
+  border-radius: 0 30px 30px 0;
+}
+.screenLinks ul li a span {
+  margin-right: 10px;
+}
+.screenLinks ul li a.activeLink {
+  background: #fff;
+  color: #ac267c;
+}
+.loggedIn {
+  max-width: 210px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 2%;
+  right: 2%;
+}
+.loggedIn .image img {
+  width: 100%;
+  max-width: 80px;
+  max-height: 80px;
+  min-height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+.loggedIn .detail p {
+  font-size: 20px;
+  font-weight: 600;
+  color: #282828;
+  text-transform: capitalize;
+}
+.loggedIn .detail span {
+  font-size: 18px;
+  font-weight: 400;
+  color: #282828;
+}
+.homeInner-wrap {
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.homeScreen-wrap .rightCol {
+  width: calc(100% - 300px);
+  margin: 0 0 0 auto;
+}
+.homeInner-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+}
+.homeInner-link {
+  max-width: 230px;
+  width: 100%;
+  max-height: 200px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+}
+.homeInner-link img {
+  max-width: 80px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: all 0.5s ease-in-out;
+}
+.homeInner-link p {
+  font-size: 30px;
+  font-weight: 600;
+  color: #282828;
+  text-transform: capitalize;
+  transition: all 0.5s ease-in-out;
+}
+.homeInner-link:hover {
+  box-shadow: 0 0 10px 0 #ccc;
+}
+.homeInner-link:hover img {
+  transform: scale(0.9);
+}
+.homeInner-link:hover p {
+  color: #ac267c;
+}
+/** HOME SCREEN CSS END
+*************************************/
+
+/** MESSAGES SCREEN CSS START
+************************************/
+.messager-img img {
+  max-width: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+.messagesect-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 2px solid #ebebeb;
+}
+.inner-message-section1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner-child-sect {
+  padding: 0px 20px;
+  width: calc(100% - 100px);
+}
+.inner-message-section2 {
+  max-width: 80px;
+  width: 100%;
+}
+.main-message-wrap {
+  background: #fff;
+  box-shadow: 0px 0px 8px 1px #ccc;
+  max-width: 1050px;
+  border-radius: 10px;
+  margin-top: 20px;
+  overflow-y: scroll;
+  max-height: 560px;
+  min-height: 560px;
+}
+.main-message-wrap::-webkit-scrollbar {
+  width: 5px;
+}
+.main-message-wrap::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+} 
+.main-message-wrap::-webkit-scrollbar-thumb {
+  background-color: #ebebeb;
+  outline: 1px solid #ebebeb;
+  border-radius: 20px;
+}
+.main-message-wrap::-webkit-scrollbar-corner  {
+  border-radius: 20px;
+}
+.child-st-name {
+  font-size: 20px;
+  font-weight: 600;
+  color: #282828;
+  text-transform: capitalize;
+}
+.child-st-para {
+  font-size: 16px;
+  font-weight: 400;
+  color: #282828;
+}
+/** MESSAGES SCREEN CSS END
+************************************/
+
+/** MEASURE SCREEN CSS START
+************************************/
+.measureScreen-wrap {
+  max-height: 600px;
+  min-height: 600px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 0 10px;
+}
+.measureScreen-wrap::-webkit-scrollbar {
+  width: 5px;
+}
+.measureScreen-wrap::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+} 
+.measureScreen-wrap::-webkit-scrollbar-thumb {
+  background-color: #ebebeb;
+  outline: 1px solid #ebebeb;
+  border-radius: 20px;
+}
+.measureScreen-wrap::-webkit-scrollbar-corner  {
+  border-radius: 20px;
+}
+.measureScreen-innerWrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.measureScreen-innerWrap form {
+  max-width: 570px;
+  width: 100%;
+}
+.measureScreen-innerWrap .avatar-upload {
+  position: relative;
+  max-width: 420px;
+  min-height: 160px;
+  max-height: 160px;
+  margin-bottom: 30px;
+}
+.measureScreen-innerWrap .avatar-upload .avatar-edit {
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  bottom: 0;
+}
+.measureScreen-innerWrap .avatar-upload .avatar-edit input {
+  display: none;
+}
+.measureScreen-innerWrap .avatar-upload .avatar-edit input + label {
+  display: inline-block;
+  background: linear-gradient(180deg, rgba(230,174,0,1) 22%, rgba(247,129,0,1) 68%);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px 30px;
+  border-radius: 5px;
+}
+.measureScreen-innerWrap .avatar-upload .avatar-edit input + label:hover {
+  background: linear-gradient(180deg, rgba(186,34,124,1) 22%, rgba(127,38,134,1) 68%);
+}
+.measureScreen-innerWrap .avatar-upload .avatar-preview {
+  max-width: 250px;
+  height: 160px;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 1px #ccc;
+  padding: 15px;
+}
+.measureScreen-innerWrap .avatar-upload .avatar-preview > div {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.black-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #282828;
+  text-transform: capitalize;
+}
+.measurementBox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.measue-field {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 1px #ccc;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  display: inline-block;
+  max-width: 60px;
+  min-height: 50px;
+  margin-bottom: 10px;
+  outline-color: #e8aa00;
+  color: #282828;
+  border: none;
+}
+.measurementBox span {
+  font-size: 18px;
+  font-weight: 600;
+  color: #282828;
+}
+.total-field {
+  font-size: 18px;
+  font-weight: 600;
+  color: #282828;
+  padding: 12px 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 1px #ccc;
+  outline: none;
+  max-width: 150px;
+  width: 100%;
+  border: none;
+}
+.detailBox {
+  font-size: 18px;
+  font-weight: 600;
+  color: #282828;
+  padding: 12px 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 1px #ccc;
+  outline-color: #e8aa00;
+  color: #282828;
+  width: 100%;
+  resize: none;
+  min-height: 100px;
+  max-height: 100px;
+  border: none;
+}
+.plus-minus {
+  max-width: 130px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.quaitity-box span {
+  font-size: 18px;
+  font-weight: 700;
+  color: #282828;
+  cursor: pointer;
+  display: inline-block;
+}
+.measure-rightCol {
+  width: calc(100% - 600px);
+}
+.infoBox-wrap {
+  display: flex;
+  align-items: center;
+}
+.info-btn {
+  background: transparent;
+  border: none;
+  outline: none;
+  margin-right: 30px;
+}
+.info-btn img {
+  max-width: 20px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.infoBox {
+  position: relative;
+  box-shadow: 0 0 5px 1px #ccc;
+  padding: 15px 20px;
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+  display: none;
+}
+.infoBox.show {
+  display: block;
+  transition: all 0.5s ease-in-out;
+}
+.infoBox:before {
+  content: '';
+  position: absolute;
+  top: 45%;
+  left: -3%;
+  width: 25px;
+  height: 25px;
+  background: transparent;
+  border-radius: 5px;
+  transform: rotate(45deg);
+  z-index: -1;
+  border-left: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-top: none;
+  border-right: none;
+}
+.infoBox h5 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #282828;
+  margin-bottom: 10px;
+}
+.infoBox span {
+  font-size: 16px;
+  font-weight: 600;
+  color: #282828;
+  display: block;
+}
+.cart-detailBox {
+  box-shadow: 0 0 5px 1px #ccc;
+  padding: 20px 25px;
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-start;
+}
+.detailCart-productInfo {
+  display: flex;
+  align-items: flex-start;
+  max-width: 350px;
+}
+.cartDetail-left {
+  width: calc(100% - 100px);
+}
+.cartDetail-left span {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #fb7a00;
+  display: inline-block;
+  margin: 5px 15px 0 0;
+}
+.productCart-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #282828;
+}
+.cartDetail-left .paragraph {
+  font-size: 16px;
+  font-weight: 400;
+  color: #282828;
+}
+.detailCart-button {
+  max-width: 220px;
+}
+.cartDetail-right {
+  max-width: 100px;
+  width: 100%;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/** MEASURE SCREEN CSS END
+************************************/
